@@ -20,9 +20,10 @@ abstract class ControllerAdmin extends Controller
 
     final protected function initialize()
     {
-        //Código de auth y permisos
-        //Será libre, pero añadiremos uno por defecto en breve
-        //Posiblemente se cree una clase abstracta con lo que debe tener por defecto
+        if ( ! Session::get('id')) {
+            View::template('login');
+            return false;
+        }
     }
 
     final protected function finalize()

@@ -54,7 +54,7 @@ const PRODUCTION = false;
  * - Esta ruta se utiliza para cargar los archivos de la aplicacion
  * - En producción, es recomendable ponerla manual usando const
  */
-const APP_PATH = '../app/';
+const APP_PATH = '/Applications/XAMPP/xamppfiles/htdocs/KuAdmin/app/';
 
 /*
  * Define el CORE_PATH
@@ -63,7 +63,7 @@ const APP_PATH = '../app/';
  * - Ruta al directorio que contiene el núcleo de Kumbia (por defecto la ruta al directorio core)
  * - En producción, es recomendable ponerla manual usando const
  */
-const CORE_PATH = '../vendor/kumbia/framework/core/';
+const CORE_PATH = '/Applications/XAMPP/xamppfiles/htdocs/core_1_1_3/';
 
 /*
  * Define el PUBLIC_PATH.
@@ -92,7 +92,7 @@ $url = $_SERVER['PATH_INFO'] ?? '/';
 
 
  // Composer autoload
- require '../vendor/autoload.php';
+ require '/Applications/XAMPP/xamppfiles/htdocs/vendor/autoload.php';
 /**
  * Carga el gestor de arranque
  * Por defecto el bootstrap del core.
