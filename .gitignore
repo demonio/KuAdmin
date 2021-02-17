@@ -15,3 +15,9 @@ phpunit.xml
 
 # Mac filesystem dust
 .DS_Store
+
+._*
+__OLD__*
+config/
+img/
+index.php

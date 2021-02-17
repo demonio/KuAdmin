@@ -8,30 +8,26 @@
 		<?= Html::includeCss() ?>
 	</head>
 	<body>
-		<main class="grid">
-			<div class="s0 m1 l1 xl2 xxl4"></div>
-			<article class="s12 m10 l10 xl8 xxl4 grid">
-				<div class="s12 m12 l6">
-					<hgroup>
+		<main>
+			<article class="grid">
+				<form>
+					<header>
 						<h1><?=_('Sign in')?></h1>
 						<h2><?=_('Only for admins')?></h2>
-					</hgroup>
-					<form>
-						<input type="text" name="login" placeholder="Login" aria-label="Login" autocomplete="nickname" required="">
-						<input type="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password" required="">
-						<fieldset>
-							<label for="remember">
+					</header>
+					<section>
+						<input type="text" name="login" placeholder="Login" aria-label="Login" autocomplete="nickname" required>
+						<input type="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password" required>
+						<label for="remember">
 							<input type="checkbox" role="switch" id="remember" name="remember" aria-checked="false">
-							<?_('Remember me')?>
-							</label>
-						</fieldset>
-						<button type="submit" class="contrast" onclick="event.preventDefault()"><?=_('Login')?></button>
-					</form>
-				</div>
-				<div class="s0 m0 l1"></div>
-				<div class="s0 m0 l5">
-					<img alt="<?=_('Login img')?>" src="https://source.unsplash.com/random">
-				</div>
+							<?=_('Remember me')?>
+						</label>
+					</section>
+					<footer>
+						<button type="submit" class="contrast"><?=_('Login')?></button>
+					</footer>
+				</form>
+				<img alt="<?=_('Login img')?>" src="https://source.unsplash.com/random">
 			</article>
 		</main>
 	</body>
